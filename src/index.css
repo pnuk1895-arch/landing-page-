@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.body {
+    @apply font-custom
+}
+
+@utility font-custom {
+    font-family: "Google Sans", sans-serif;
+
+}
+
+.logo-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
