@@ -11,7 +11,7 @@ export default function LandingPage()
   return (
   <>
     <Header/>
-    <main>
+    <main className="w-full">
       <HeroSection/>
       <TrustedGroupSection/>
       <ServicesComponent/>

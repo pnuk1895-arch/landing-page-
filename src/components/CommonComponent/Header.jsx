@@ -22,7 +22,7 @@ export default function Header() {
             src={logo}
             alt="Axvional logo"
             className='h-14' />
-            <Link to="https://www.axvionel.com/" className='relative leading-4.5 text-center shrink-0'>
+            <Link to="https://www.axvionel.com/" target='_blank' className='relative leading-4.5 text-center shrink-0'>
               <p className='font-bold text-white scale-95'>Axvional Digital</p>
               <p className='text-[12px] text-gray-500 font-bold tracking-widest scale-y-85 '>PRIVATE LIMITED</p>
               <Cpu className='absolute top-0 left-31 w-3 h-3 text-gray-300 transition-colors duration-500 ease-in hover:text-gray-500'/>
