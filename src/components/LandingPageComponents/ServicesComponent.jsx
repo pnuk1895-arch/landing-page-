@@ -34,6 +34,7 @@ export default function ServicesComponent() {
                 from-[#F3F7FD] from-0%
                 via-white via-50%
                 to-[#F3F7FD] to-100%
+                
             "
         >
             <div
@@ -73,6 +74,7 @@ export default function ServicesComponent() {
                         2xl:pl-20
 
                         z-10
+                        
                         "
                     >
                         {/* Small heading */}
