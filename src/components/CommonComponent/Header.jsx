@@ -12,7 +12,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className=" absolute top-0 w-full h-18 px-8 sm:px-10 md:px-12 lg:px-14 " >
+    <header className="absolute inset-0 z-10 w-full h-18 px-8 sm:px-10 md:px-12 lg:px-14 " >
 
       {/* // desktop header */}
       <div className="w-full max-w-326 h-full mx-auto flex justify-center items-center">
@@ -22,11 +22,11 @@ export default function Header() {
             src={logo}
             alt="Axvional logo"
             className='h-14' />
-            <Link to="https://www.axvionel.com/" target='_blank' className='relative leading-4.5 text-center shrink-0'>
-              <p className='font-bold text-white scale-95'>Axvional Digital</p>
-              <p className='text-[12px] text-gray-500 font-bold tracking-widest scale-y-85 '>PRIVATE LIMITED</p>
-              <Cpu className='absolute top-0 left-31 w-3 h-3 text-gray-300 transition-colors duration-500 ease-in hover:text-gray-500'/>
-            </Link>
+          <Link to="https://www.axvionel.com/" target='_blank' className='relative leading-4.5 text-center shrink-0'>
+            <p className='font-bold text-white scale-95'>Axvional Digital</p>
+            <p className='text-[12px] text-gray-500 font-bold tracking-widest scale-y-85 '>PRIVATE LIMITED</p>
+            <Cpu className='absolute top-0 left-31 w-3 h-3 text-gray-300 transition-colors duration-500 ease-in hover:text-gray-500' />
+          </Link>
         </div>
 
         {/* nav bar   */}
@@ -44,21 +44,19 @@ export default function Header() {
 
         {/* call button */}
         <div className=' w-60 hidden md:flex justify-end'>
-          <button className='bg-[#FFC83D] text-black font-bold rounded-full w-full max-w-50 transition-all flex justify-center py-2 items-center gap-2 ' >
+          <button className='bg-[#FFC83D] text-black font-bold rounded-full w-full max-w-56 transition-all flex justify-center py-2 items-center gap-2 px-3 ' >
             <p className='text-sm '>
               Get a Free Strategy Call
             </p>
             <ArrowRight className='w-5 h-5' />
           </button>
         </div>
-      
-      {/* tablet */}
 
-              <div className='w-1/12 flex justify-end lg:hidden'>
-                  <MdOutlineMenu className='w-8 h-8' />
-              </div>
+        {/* tablet */}
 
-      
+        <div className='w-1/12 flex justify-end lg:hidden'>
+          <MdOutlineMenu className='w-8 h-8' />
+        </div>
       </div>
     </header>
   )

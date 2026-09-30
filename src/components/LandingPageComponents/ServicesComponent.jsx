@@ -33,8 +33,7 @@ export default function ServicesComponent() {
                 bg-linear-to-b
                 from-[#F3F7FD] from-0%
                 via-white via-50%
-                to-[#F3F7FD] to-100%
-                
+                to-[#F3F7FD] to-100
             "
         >
             <div

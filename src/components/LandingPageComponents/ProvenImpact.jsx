@@ -32,9 +32,10 @@ export default function CaseStudies() {
       py-3
       text-amber-50
       mx-auto
+      lg:h-59
     ">
 
-        <div className="h-full">
+        <div className="lg:h-59">
 
           <div className="
           absolute
@@ -48,6 +49,7 @@ export default function CaseStudies() {
               className="
               w-full
               h-full
+              lg:h-59
               object-center
               object-fill
             "
@@ -97,9 +99,13 @@ export default function CaseStudies() {
               font-custom
               text-center
               text-sm
+
               min-[425px]:text-base
+              
               sm:text-lg
+              
               md:text-2xl
+              
               lg:text-3xl
             ">
                 Real Growth for <span className="text-[#FFC83D] ">UAE Businesses</span> 
