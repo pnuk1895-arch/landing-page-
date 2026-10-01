@@ -44,6 +44,7 @@ export default function CaseStudies() {
         ">
 
             <img
+              loading="lazy"
               src={caseStudies}
               alt=""
               className="

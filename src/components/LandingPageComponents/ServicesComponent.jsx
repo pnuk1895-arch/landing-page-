@@ -216,6 +216,7 @@ export default function ServicesComponent() {
                         "
                     >
                         <img
+                            loading="lazy"
                             src={ServiceImage}
                             alt="Dubai skyline"
                             className="

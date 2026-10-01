@@ -145,7 +145,7 @@ export default function About()
         {/* bg element   */}
         <div className="w-full inset-0 ">
           {/* bg image  */}
-            <img src={AboutImage} alt="" className="h-70
+            <img loading="lazy" src={AboutImage} alt="" className="h-70
                                                     w-full 
                                                     hidden 
                                                     lg:block 

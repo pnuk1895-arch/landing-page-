@@ -44,6 +44,7 @@ export default function TrustedGroupSection()
                         <img
                         src={logo} 
                         alt={name}
+                        loading="lazy"
                         className='text-black w-22' />
                     </div>
                 </SwiperSlide>
