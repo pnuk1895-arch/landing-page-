@@ -1,15 +1,16 @@
-import HeroImage from "../../assets/heroImage.webp"
 import { Icon } from "@iconify/react"
 import { ArrowRight, } from "lucide-react"
 import { Link } from "react-router-dom"
 
 export default function HeroSection() {
   return (
-    <section id="HeroSection"  className="relative w-full h-150 bg-black overflow-hidden scroll-mt-20">
+    <section id="HeroSection" className="relative w-full h-150 bg-black overflow-hidden scroll-mt-20">
       <div className="absolute inset-0 z-0 h-auto w-full">
         <img
-          src={HeroImage}
+          src='../../assets/heroImage.webp'
           alt="UAE Town"
+          fetchPriority="high"
+          loading="eager"
           className="w-full h-150 object-fill object-top" />
         <div className=" absolute inset-0 bg-[linear-gradient(to_right,#061735_0%,transparent_85%),linear-gradient(to_bottom,#061735_0%,transparent_85%)]" />
         <div />
