@@ -13,12 +13,14 @@ const contact = [
   {
     name: 'PRIMARY EMAIL',
     icon: 'carbon:email',
-    content: 'info@axvioonal.com'
+    content: 'info@axvioonal.com',
+    path:"mailto:axvional@gmail.com"
   },
   {
     name: 'PHONE',
     icon: 'akar-icons:phone',
-    content: '+91 93193 09719'
+    content: '+91 93193 09719',
+    path:'tel:+91 93193 09719'
   },
   {
     name: 'OFFICE ADDRESS',
@@ -26,11 +28,11 @@ const contact = [
     content: 'D-79,D-Block,Sector-2,Noida,Utter Pradesh 201301'
   }
 ]
-// [max-content_max-content_max-content_max-content]
+
 export default function Footer() {
   return (
     <footer className="w-full bg-blue-950 px-8 sm:px-10 md:px-12 lg:px-15  py-16">
-      <div className="max-w-338 w-full mx-auto grid grid-rows-4 gap-6 md:grid-cols-2 md:grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 lg:gap-8 ">
+      <div className="max-w-338 w-full mx-auto grid grid-rows-[max-content_max-content_max-content_max-content] gap-8 md:grid-cols-2 md:grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 lg:gap-8 ">
         {/* logo */}
         <div className='font-custom'>
           <img
@@ -72,7 +74,7 @@ export default function Footer() {
         {/* naviagetion */}
         <div className='self-start'>
           <h1 className='text-white/80 text-sm font-bold scale-y-90 tracking-widest'>NAVIGATION</h1>
-          <div className='flex flex-col mt-8 gap-3'>
+          <div className='flex flex-col mt-7 gap-3'>
             {
               Nav.map((N, index) => (
                 <Link key={index} className='text-white/60 font-bold scale-y-95 text-xs tracking-wider'>{N}</Link>
@@ -84,7 +86,7 @@ export default function Footer() {
         {/* specializations */}
         <div className='my-4'>
           <h1 className='text-white/80 text-sm font-bold scale-y-90 tracking-widest'>SPECIALIZATIONS</h1>
-          <div className='flex flex-col mt-8 gap-3'>
+          <div className='flex flex-col mt-7 gap-3'>
             {
               specializations.map((N, index) => (
                 <Link key={index} className='text-white/60 font-bold scale-y-95 text-xs tracking-wider'>{N}</Link>
@@ -94,9 +96,9 @@ export default function Footer() {
         </div>
 
         {/* global outreach */}
-        <div>
+        <div >
           <h1 className='text-white/80 text-sm font-bold scale-y-90 tracking-widest'>GLOBAL OUTREACH</h1>
-          <div className='my-10 flex flex-col gap-6 '>
+          <div className='my-7 flex flex-col gap-6 '>
             {
               contact.map((detail, index) => (
                 <div key={index} className=''>
@@ -106,7 +108,7 @@ export default function Footer() {
                       icon={detail.icon}
                       className='w-6 h-5 text-white/60 '
                     />
-                    <Link to='' className='italic font-bold w-fit bg-linear-to-b from-white via-white to-white/20 bg-clip-text text-transparent ' >{detail.content}</Link>
+                    <Link to={detail.path} className='italic font-bold w-fit bg-linear-to-b from-white via-white to-white/20 bg-clip-text text-transparent ' >{detail.content}</Link>
                   </div>
                 </div>
               ))
