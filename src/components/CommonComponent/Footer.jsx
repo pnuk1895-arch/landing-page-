@@ -1,4 +1,4 @@
-import logo from '/Logo_of_Axvional_digital.png'
+import logo from '/Logo_of_Axvional_digital.webp'
 import { Icon } from '@iconify/react'
 import { Link } from 'react-router-dom'
 

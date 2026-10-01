@@ -1,4 +1,4 @@
-import caseStudies from "../../assets/caseStudies.png"
+import caseStudies from "../../assets/caseStudies.webp"
 import { Icon } from "@iconify/react"
 
 const data = [
@@ -21,7 +21,7 @@ const data = [
 
 export default function CaseStudies() {
   return (
-    <section className="relative w-full">
+    <section id="CaseStudies" className="relative w-full">
       <section className="
       w-full
       max-w-366

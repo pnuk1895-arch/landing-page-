@@ -1,10 +1,10 @@
-import AboutImage from "../../assets/About.png"
+import AboutImage from "../../assets/About.webp"
 import {Icon } from '@iconify/react'
 
 export default function About()
 {
   return (
-  <section className="relative 
+  <section id="About" className="relative 
                       w-full 
                       max-w-380 
                       mx-auto">

@@ -1,13 +1,13 @@
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Autoplay } from 'swiper/modules';
 
-import Careem from '../../assets/businessGroupLogo/careem.png'
-import DAMAC from '../../assets/businessGroupLogo/DAMAC.png'
-import EMAAR from '../../assets/businessGroupLogo/EMAAR.png'
-import Emirates from '../../assets/businessGroupLogo/Emirates.png'
-import Noon from '../../assets/businessGroupLogo/Noon.png'
-import tabalat from '../../assets/businessGroupLogo/talabat.png'
-import etisalat from '../../assets/businessGroupLogo/etisalat.png'
+import Careem from '../../assets/businessGroupLogo/careem.webp'
+import DAMAC from '../../assets/businessGroupLogo/DAMAC.webp'
+import EMAAR from '../../assets/businessGroupLogo/EMAAR.webp'
+import Emirates from '../../assets/businessGroupLogo/Emirates.webp'
+import Noon from '../../assets/businessGroupLogo/Noon.webp'
+import tabalat from '../../assets/businessGroupLogo/talabat.webp'
+import etisalat from '../../assets/businessGroupLogo/etisalat.webp'
 
 import 'swiper/css';
 

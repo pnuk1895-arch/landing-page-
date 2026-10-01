@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import ServiceImage from "../../assets/Services_Image.png";
+import ServiceImage from "../../assets/Services_Image.webp";
 
 const services = [
     {
@@ -27,6 +27,7 @@ const services = [
 export default function ServicesComponent() {
     return (
         <section
+        id="OurServices"
             className="
                 w-full
                 mt-6
