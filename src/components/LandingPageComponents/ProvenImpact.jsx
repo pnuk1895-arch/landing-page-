@@ -1,4 +1,4 @@
-import caseStudiesLarge from "../../assets/caseStudies/caseStudies_large.webp"
+import caseStudiesLarge from "../../assets/CaseStudies/caseStudies_large.webp"
 import caseStudiesMedium from '../../assets/CaseStudies/caseStudies_medium.webp'
 import caseStudiesSmall from '../../assets/CaseStudies/caseStudies_small.webp'
 
