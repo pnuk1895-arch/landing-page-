@@ -1,14 +1,18 @@
 import { Icon } from "@iconify/react"
 import { ArrowRight, } from "lucide-react"
 import { Link } from "react-router-dom"
-import HeroImage from '../../assets/heroImage.webp'
+import HeroLarge from '../../assets/HeroImage/heroImage_large.webp'
+import HeroSmall from '../../assets/HeroImage/heroImage_small.webp'
+import HeroMedium from '../../assets/HeroImage/heroImage_medium.webp'
 
 export default function HeroSection() {
   return (
     <section id="HeroSection" className="relative w-full h-150 bg-black overflow-hidden scroll-mt-20">
       <div className="absolute inset-0 z-0 h-auto w-full">
         <img
-          src={HeroImage}
+          src={HeroSmall}
+          sreset={`${HeroSmall} 480w, ${HeroMedium} 800w, ${HeroLarge} 1200w`}
+          sizes="(max-width: 600px) 480px, 800px"
           alt="UAE Town"
           fetchPriority="high"
           loading="eager"

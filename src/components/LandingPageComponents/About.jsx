@@ -1,4 +1,7 @@
-import AboutImage from "../../assets/About.webp"
+import AboutLarge from '../../assets/AboutImage/About_large.webp'
+import AboutMedium from '../../assets/AboutImage/About_medium.webp'
+import AboutSmall from '../../assets/AboutImage/About_small.webp'
+
 import {Icon } from '@iconify/react'
 
 export default function About()
@@ -145,13 +148,17 @@ export default function About()
         {/* bg element   */}
         <div className="w-full inset-0 ">
           {/* bg image  */}
-            <img loading="lazy" src={AboutImage} alt="" className="h-70
-                                                    w-full 
-                                                    hidden 
-                                                    lg:block 
-                                                    object-fill
-                                                    xl:h-80
-                                                    "/>
+            <img loading="lazy" src={AboutSmall} 
+            sreset={`${AboutSmall} 480w, ${AboutMedium} 800w, ${AboutLarge} 1200w`}
+            sizes="(max-width: 600px) 480px, 800px" 
+            alt=""
+            className="h-70
+                      w-full 
+                      hidden 
+                      lg:block 
+                      object-fill
+                      xl:h-80
+                      "/>
           {/* bg colored element  */}
             <div className="absolute 
                             z-5 

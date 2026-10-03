@@ -41,11 +41,13 @@ export default function Header() {
     }
   }, [Dropdown])
 
-  function ClickSection(){
+  function ClickSection(path){
 
     document.body.classList.remove('overflow-hidden')
 
     setDropdown(false)
+
+    window.location.href = path
 
   }
 
@@ -61,7 +63,7 @@ export default function Header() {
           <img
             src={logo}
             alt="Axvional logo"
-            className='h-14' />
+            className='h-14 w-15' />
           <Link to="https://www.axvionel.com/" target='_blank' className='relative leading-4.5 text-center shrink-0'>
             <p className='font-bold text-white scale-95'>Axvional Digital</p>
             <p className='text-[12px] text-gray-500 font-bold tracking-widest scale-y-85 '>PRIVATE LIMITED</p>
@@ -126,7 +128,7 @@ export default function Header() {
                 <div className='px-4 my-4'>
                   <nav>
                     {links.map(([Link, path], index) => (
-                      <div key={index} onClick={ClickSection} className='flex flex-rows justify-between items-center border-b border-gray-500/50 py-3 '>
+                      <div key={index} onClick={()=>{ClickSection(path)}} className='flex flex-rows justify-between items-center border-b border-gray-500/50 py-3 '>
                         <a
                           href={path}
                           className='text-white font-semibold text-lg '

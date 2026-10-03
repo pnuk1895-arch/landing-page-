@@ -1,4 +1,7 @@
-import caseStudies from "../../assets/caseStudies.webp"
+import caseStudiesLarge from "../../assets/caseStudies/caseStudies_large.webp"
+import caseStudiesMedium from '../../assets/CaseStudies/caseStudies_medium.webp'
+import caseStudiesSmall from '../../assets/CaseStudies/caseStudies_small.webp'
+
 import { Icon } from "@iconify/react"
 
 const data = [
@@ -45,7 +48,9 @@ export default function CaseStudies() {
 
             <img
               loading="lazy"
-              src={caseStudies}
+              src={caseStudiesMedium}
+              sreset={`${caseStudiesSmall} 480w, ${caseStudiesMedium} 800w, ${caseStudiesLarge} 1200w`}
+              sizes="(max-width: 600px) 480px, 800px"
               alt=""
               className="
               w-full

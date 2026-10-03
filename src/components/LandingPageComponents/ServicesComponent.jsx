@@ -1,5 +1,7 @@
 import { Icon } from "@iconify/react";
-import ServiceImage from "../../assets/Services_Image.webp";
+import ServiceLarge from "../../assets/ServicesImage/Services_Image_large.webp";
+import ServiceMedium from '../../assets/ServicesImage/Services_Image_medium.webp'
+import ServiceSmall from '../../assets/ServicesImage/Services_Image_small.webp'
 
 const services = [
     {
@@ -217,7 +219,9 @@ export default function ServicesComponent() {
                     >
                         <img
                             loading="lazy"
-                            src={ServiceImage}
+                            src={ServiceSmall}
+                            sreset={`${ServiceSmall} 480w, ${ServiceMedium} 800w, ${ServiceLarge} 1200w`}
+                            sizes="(max-width: 600px) 480px, 800px"
                             alt="Dubai skyline"
                             className="
                             h-full
