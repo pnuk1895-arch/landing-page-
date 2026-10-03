@@ -21,9 +21,9 @@ import NoonLarge from '../../assets/businessGroupLogo/Noon/Noon_large.webp'
 import NoonMedium from '../../assets/businessGroupLogo/Noon/Noon_medium.webp'
 import NoonSmall from '../../assets/businessGroupLogo/Noon/Noon_small.webp'
 
-import tabalatLarge from '../../assets/businessGroupLogo/talabat/Talabat_large.webp'
-import tabalatMedium from '../../assets/businessGroupLogo/talabat/Talabat_medium.webp'
-import tabalatSmall from '../../assets/businessGroupLogo/talabat/Talabat_small.webp'
+import tabalatLarge from '../../assets/businessGroupLogo/talabat/talabat_large.webp'
+import tabalatMedium from '../../assets/businessGroupLogo/talabat/talabat_medium.webp'
+import tabalatSmall from '../../assets/businessGroupLogo/talabat/talabat_small.webp'
 
 import etisalatLarge from '../../assets/businessGroupLogo/etisalat/etisalat_large.webp'
 import etisalatMedium from '../../assets/businessGroupLogo/etisalat/etisalat_medium.webp'
